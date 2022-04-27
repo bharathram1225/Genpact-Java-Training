@@ -119,7 +119,7 @@ public class OnlineQuiz {
 				else {
 					System.out.println("incorrect answer");
 					
-				}
+				}												
 			}
 			System.out.println("---------------------------------- ");
 			
