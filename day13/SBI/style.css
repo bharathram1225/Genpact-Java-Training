@@ -1,0 +1,130 @@
+
+/* start - nav tags list */
+.dropbtn {
+    background-color: #0b1f42;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    margin-right: -5px;
+    border-right: 2px solid rgb(7, 113, 96);
+  }
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 12px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid blue;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0b1f40;
+}
+
+/* end - nav tags list */
+
+
+/* start - glowing text */
+
+.text-size{
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.glow {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow:  0 0 10px #de0b2b;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ccde0b;
+    }
+  }
+
+/* end - glowing text */
+
+
+
+/* start center block */
+
+  .fa-user{
+      color: blue;
+  }
+
+  .login-btn{
+      background-color: #292074;
+      color: white;
+    border: none;
+    height: 30px;
+  }
+
+  .icon-text-size{
+      font-size: 12px;
+  }
+
+  .yono-text{
+      font-style: italic;
+  }
+
+
+/* endd of center block */
+
+/* start of marque data */
+.marqe-text-con{
+    background-color: #ffca7b;
+    color:black;
+}
+/* end of marque data  */
+
+/* start of list-data with link */
+.list-style-change{
+    color: lightblue;
+    
+}
+
+.list-style-change li{
+    list-style-type: none;
+}
+
+.list-style-change li::before{
+    
+    content: "\00BB";
+/* ennd of list-data with link */
+
+  
+
