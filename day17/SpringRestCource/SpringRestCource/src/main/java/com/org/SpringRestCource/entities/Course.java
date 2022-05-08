@@ -1,9 +1,13 @@
 package com.org.SpringRestCource.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 
 @Entity
 public class Course {
@@ -12,12 +16,16 @@ public class Course {
 	private int id;
 	private String title;
 	private String discription;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JsonManagedReference 
+	private Author author;
 
-	public Course(int id, String title, String discription) {
+	public Course(int id, String title, String discription, Author author) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.discription = discription;
+		this.author = author;
 	}
 
 	public Course() {
@@ -49,13 +57,17 @@ public class Course {
 		this.discription = discription;
 	}
 
+	public Author getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(Author author) {
+		this.author = author;
+	}
+
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", title=" + title + ", discription=" + discription + "]";
+		return "Course [id=" + id + ", title=" + title + ", discription=" + discription + ", author=" + author + "]";
 	}
-	
-	
-	
-	
 
 }
